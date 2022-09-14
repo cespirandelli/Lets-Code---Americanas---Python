@@ -5,7 +5,10 @@
 # 2a Etapa -  Processamento ("receita")
 # 3a Etapa -  Saída de dados ("bolo")
 
+# Primeiro código em Python
 
+# Comando print: uma função que imprime na tela
+# Saída de dados
 print('Hello World!')
 print('Bem vindo ao curso de Python \
 do Coding Tank!')
