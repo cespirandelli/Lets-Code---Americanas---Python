@@ -42,15 +42,3 @@ print('Operador booleano 3: ', 'Python' == 'python')     # Verifica se as string
 print('Operador booleano 4: ', 'banana' != 'abacaxi')    # Verifica se as strings são diferentes
 print('Operador booleano 5: ', altura1 >= altura2)       # Verifica se altura1 é maior ou igual a altura2
 print('Operador booleano 6: ', altura2 > altura3) 
-
-
-
-
-
-# Operadores de Atribuição
-# São operadores que atribuem valores a variáveis
-# Exemplo: x = 10
-# x = 10 é um operador de atribuição
-# x é a variável
-# 10 é o valor
-# = é o operador de atribuição
