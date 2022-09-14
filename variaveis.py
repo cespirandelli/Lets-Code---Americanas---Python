@@ -14,6 +14,14 @@ Isso ainda é um comentário
 # O tipo de dado pode ser um número, uma string, uma lista, um dicionário, etc.
 # >> O tipo de dado é definido quando a variável é criada.
 
+# Operadores de Atribuição
+# São operadores que atribuem valores a variáveis
+# Exemplo: x = 10
+# x = 10 é um operador de atribuição
+# x é a variável
+# 10 é o valor
+# = é o operador de atribuição
+
 # Em Python não é necessário declarar o tipo de dado da variável.
 idade = 29 #Cria uma variável chamada idade e armazena o valor 26
 print(idade) #Imprime o valor da variável idade
@@ -27,7 +35,7 @@ print('\n')
 """
 Tipos de variáveis:
 
-1) nt - inteiro, ou seja, sem decimal
+1) int - inteiro, ou seja, sem decimal
 2) float - números do conjunto real, ou seja, com decimal
 3) str - string, cadeia de caracteres
 4) bool - booleano, True(1) ou False (0)
