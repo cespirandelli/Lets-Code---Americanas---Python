@@ -64,10 +64,54 @@ print('Depois do extend: ',lista)                        # Resultado: [20, 1, 3,
 # O método ".pop()" também pode receber um parâmetro, que é a posição do elemento que queremos remover
 lista.pop() #Remove o último elemento da lista
 print('Depois do pop:    ',lista)                        # Resultado: [20, 1, 3, 12, 8, 2, 7, 10, 11]
-lista.pop(0) #Remove o elemento da posição 0 da lista
+lista.pop(0) #Remove o elemento da posição 0 da list (indice 0, elemento 20)
 print('Depois do pop2:   ',lista)                        # Resultado: [1, 3, 12, 8, 2, 7, 10, 11]
 
 
 # O método ".remove()" remove o elemento que for passado como parâmetro
-lista.remove(7) #Remove o elemento 7 da lista
+# Mas nesse é necessário passar o índice do elemento que queremos remover
+lista.remove(7) #Remove o elemento 7 da lista, se houver mais de um 7, ele remove o primeiro que encontrar
 print('Depois do remove: ',lista)                        # Resultado: [1, 3, 12, 8, 2, 10, 11]
+# Se o elemento não existir na lista, ocorrerá um erro
+lista.remove(lista[0]) #Remove o elemento da posição 0 da lista (indice 0, elemento 1)
+print('Depois do remove2:',lista)
+
+# Outra forma para remover um elemento da lista é o del
+# Mas nesse é necessário passar o índice do elemento que queremos remover
+del lista[0] #Remove o elemento da posição 0 da lista (indice 0, elemento 3)
+print('Depois do del:    ',lista)                        # Resultado: [12, 8, 2, 10, 11]
+# é possível também deletar uma lista inteira com 
+# del lista
+
+'''
+    O método ".clear()" remove todos os elementos da lista
+    lista.clear() #Remove todos os elementos da lista
+    print('Depois do clear:  ',lista)                        # Resultado: []
+    Para não prejudicar a lista, vou deixar comentado desta forma para ter destaque
+'''
+print('\n')
+
+# COUNT
+# O método ".count()" conta quantas vezes um elemento aparece na lista
+lista = [15,1,6,4,8,9,5,1,3,6,8,10,15,7,14,1, 11, 7, 2, 6, 9, 11, 15]
+print('Tamano da lista:   ', len(lista))
+print("Contagem de 1: ", lista.count(1))
+print("Contagem de 2: ",lista.count(2))
+print("Contagem de 3: ",lista.count(3))
+print("Contagem de 4: ",lista.count(4))
+print("Contagem de 5: ",lista.count(5))
+print("Contagem de 6: ",lista.count(6))
+print("Contagem de 7: ",lista.count(7))
+
+# INDEX
+# O método ".index()" retorna o índice do elemento passado como parâmetro
+print("Índice do elemento 9:  ", lista.index(9))
+print("Índice do elemento 2:  ", lista.index(2))
+print("Índice do elemento 15: ", lista.index(15), '-> Lembrando que o índice começa em 0')
+
+# SORT
+# O método ".sort()" ordena a lista em ordem crescente ou decrescente
+lista.sort() #Ordena a lista em ordem crescente
+print('Depois do sort:     ',lista)
+lista.sort(reverse=True) #Ordena a lista em ordem decrescente
+print('Depois do sort2:    ',lista)
