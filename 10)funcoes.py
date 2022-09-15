@@ -22,18 +22,8 @@ max()          # Retorna o maior valor de algo
             # # Chamando a função
             # funcao('teste')
 
-# Função inicial (com parâmetros)
 
-def saudacao(nome):
-    print(f'\nOlá! Seja muito bem vindo(a) {nome} aqui você irá aprender a programar!!') 
-    # utilizar f-string fica mais polido, do que separação de virgula.
-    print('É um prazer tê-lo por aqui, espero que se dedique no curso (:\n')
-
-saudacao('César')       # funções podem ser chamadas para executar um bloco de código de forma simples
-saudacao('Beatriz')     # como esta função recebe o parâmetro "nome", é necessário escrever uma sting quando
-saudacao('Judite')      # a função é chamada, mas podemos criar funções sem parâmetros
-
-# Funcão sem parâmetros
+# Funcão inicial (sem parâmetros)
 
 def saudacao2():
     print('Salve salve, seja muito bem vindo ao curso de Python!')
@@ -41,3 +31,27 @@ def saudacao2():
 
 saudacao2()
 
+# Função inicial (com parâmetros)
+
+def saudacao(nome, curso):
+    print(f'\nOlá! Seja muito bem vindo(a) {nome} aqui você irá aprender a programar!') 
+    # utilizar f-string fica mais polido, do que separação de virgula.
+    print(f"É um prazer tê-lo(a) por aqui, espero que se dedique no curso de {curso} (: \n")
+    print('\n')
+
+saudacao('César', 'Python')         # funções podem ser chamadas para executar um bloco de código de forma simples
+saudacao('Beatriz', 'SQL')          # como esta função recebe o parâmetro "nome", é necessário escrever uma sting quando
+saudacao('Judite', 'PowerBI')       # a função é chamada, mas podemos criar funções sem parâmetros
+
+
+
+# Funçõescom parâmetros default
+
+def saudacao(nome, curso='Python'): # definimos que Python será escolhido por padrão 
+                                    # caso não haja nenhum outro input dentro da chamada da função
+    print(f'\nOlá! Seja muito bem vindo(a) {nome} aqui você irá aprender a programar!') 
+    print(f"É um prazer tê-lo(a) por aqui, espero que se dedique no curso de {curso} (: \n")
+
+saudacao('César')               # Não é necessário colocar outra entrada, caso queira a resposta padrão.
+saudacao('Beatriz', 'SQL')      # Neste caso, como foi utilizado a segunda entrada, altera-se dentro da função.
+saudacao('Judite', 'PowerBI')   
