@@ -30,7 +30,8 @@ nome = 'João'
 # Por exemplo, o nome e a idade de uma pessoa?
 # Para isso, podemos utilizar uma lista
 # Uma lista é um conjunto de valores, que podem ser de qualquer tipo
-lista = ['João', 26, 1.75] # Nome do tipo string, idade do tipo inteiro e altura do tipo float
+lista = ['João', 26, 1.75, True] # Nome do tipo string, idade do tipo inteiro, 
+                                 # altura do tipo float e se é maior de idade do tipo booleano
 print(lista, type(lista)) # Resultado: ['João', 26, 1.75] <class 'list'>
 
 '''
@@ -51,4 +52,53 @@ notas = [10, 8, 9]
 # Podemos também criar uma lista vazia
 lista_vazia = []
 # Outra forma de criar uma lista vazia
-lista_vazia = list()
+lista_vazia = list() #utilizamos a função list() para converter alguma estrutura em uma lista
+
+# Podemos criar uma lista que possui outras listas dentro dela
+lista = ['João', 26, 1.75, True, ['Python', 'Java', 'C#']] # Lista de 5 itens, sendo o último uma lista de 3 itens
+
+# Podemos também criar uma lista com valores repetidos
+lista = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+
+
+
+# Indexação e slices
+
+lista = [10, 'Walisson', 3.1415, True] 
+# Podemos acessar cada item da lista utilizando o índice do item
+# O índice de um item é a sua posição na lista
+# O primeiro item da lista possui o índice 0
+# O segundo item da lista possui o índice 1
+# O terceiro item da lista possui o índice 2
+# E assim por diante
+# Podemos acessar cada item da lista utilizando o índice do item entre colchetes []
+print(lista[0])     # Resultado: 10
+print(lista[1])     # Resultado: Walisson
+print(lista[2])     # Resultado: 3.1415
+print(lista[3])     # Resultado: True
+#print(lista[4])    # Resultado: IndexError: list index out of range, não existe o índice 4
+print(lista[-1])    # Resultado: True
+
+print(lista[:])     # Resultado: [10, 'Walisson', 3.1415, True]
+print(lista[1:])    # Resultado: ['Walisson', 3.1415, True]
+print(lista[1:3])   # Resultado: ['Walisson', 3.1415]
+print(lista[1:-1])  # Resultado: ['Walisson', 3.1415] 
+
+'''
+    Quando realizamos o slice, o último número não é incluído
+    
+    Ou seja, ao rodar lista[1:3], estamos pegando os itens da posição 1 até a posição 2
+    Ou seja, os itens da posição 1 e 2
+   
+    Quando rodamos lista[1:-1], estamos pegando os itens da posição 1 até a penúltima posição
+    Ou seja, os itens da posição 1 e 2
+'''
+
+lista = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+print(lista[1:10:2])    # Resultado: [20, 40, 60, 80, 100]
+print(lista[1::2])      # Resultado: [20, 40, 60, 80, 100]
+# O terceiro número é o passo, ou seja, a cada quantos itens ele pula
+# Neste exemplo, ele pula de 2 em 2
+# Funciona como o range(x,y,z) que vimos anteriormente, onde o z é o passo
+print(lista[::2])       # Resultado: [10, 30, 50, 70, 90]
