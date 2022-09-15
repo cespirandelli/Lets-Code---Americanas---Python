@@ -3,7 +3,7 @@
     
     Como criar uma lista?                            Usando colchetes []
     
-    Como adicionar um item a uma lista?              Usando o método append() ou insert()
+    Como adicionar um item a uma lista?              Usando o método append(), insert() ou extend()
     
     Como remover um item de uma lista?               Usando o método remove(), pop() ou del()
     
