@@ -29,6 +29,22 @@ print('\n')
     0, 5
 '''
 
-for variavel in range(2, 11, 2): 
+for variavel in range(0, 11, 2): 
     print(variavel)
-    
+
+# Quando o for será útil?
+# Quando sabemos quantas vezes será necessário repetir uma ação
+
+'''
+    Exemplo: quero pegar 3 notas de um aluno e calcular a média
+'''
+soma = 0
+
+for i in range(1,4):
+    nota = float(input(f'Informe a nota {i}: ')) # quando utilizamos o f-string, podemos colocar uma variavel dentro da string
+                                                 # usando chaves, neste caso, chamando a variável i
+    soma += nota       #isto é uma variável acumuladora
+                        # a cada iteração, o valor da variável media será incrementado
+                        # com o valor da variável nota
+
+print('Média: ', round(soma/3, 2)) # round() arredonda o valor para 2 casas decimais, se eu quiser 3 casas decimais, uso round(soma/3, 3)
