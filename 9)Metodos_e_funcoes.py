@@ -115,3 +115,16 @@ lista.sort() #Ordena a lista em ordem crescente
 print('Depois do sort:     ',lista)
 lista.sort(reverse=True) #Ordena a lista em ordem decrescente
 print('Depois do sort2:    ',lista)
+
+
+# FUNÇÕES PARA LISTAS
+# len() -> Retorna o tamanho da lista
+print('Tamanho da lista: ', len(lista))
+
+# max() -> Retorna o maior elemento da lista
+print('Maior elemento:   ', max(lista))
+# min() -> Retorna o menor elemento da lista
+print('Menor elemento:   ', min(lista))
+
+# sum() -> Retorna a soma de todos os elementos da lista
+print('Soma dos elementos:', sum(lista))
