@@ -3,13 +3,13 @@
 # basta utilizar as funções de conversão de tipos de dados.
 
 '''
-# Funções de conversão de tipos de dados
-# int() - converte para inteiro
-# float() - converte para float
-# str() - converte para string
-# bool() - converte para booleano
-# list() - converte para lista
-# dict() - converte para dicionário
+    Funções de conversão de tipos de dados
+    int() - converte para inteiro
+    float() - converte para float
+    str() - converte para string
+    bool() - converte para booleano
+    list() - converte para lista
+    dict() - converte para dicionário
 '''
 
 # Exemplo de conversão de tipos de dados
