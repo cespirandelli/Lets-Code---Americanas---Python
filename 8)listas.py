@@ -102,3 +102,27 @@ print(lista[1::2])      # Resultado: [20, 40, 60, 80, 100]
 # Neste exemplo, ele pula de 2 em 2
 # Funciona como o range(x,y,z) que vimos anteriormente, onde o z é o passo
 print(lista[::2])       # Resultado: [10, 30, 50, 70, 90]
+
+# Agora iremos percorrer todos os elementos da lista utilizando o for loop
+
+for elemento in lista:
+    print(elemento)
+
+
+# Outra forma que podemos percorrer os elementos da lista, será utilizando o tamanho da lista e seus índices
+
+print('Comprimento da lista: ', len(lista)) #len sempre tras a quantidade de elementos que existem dentro 
+                                            #de alguma estrutura de dados.
+
+for i in range(len(lista)):
+    print(i)            #Resultado: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+'''
+# Note que no segundo for loop, que estamos utilizando o range(len(lista))
+# O range irá gerar uma lista de números de 0 até 9, que é o tamanho da lista
+# Ou seja, seus índices
+'''
+
+# Podemos então percorrer os elementos da lista utilizando o índice e o tamanho da lista
+
+for i in range(len(lista)):
+    print(lista[i])     # Resultado: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
