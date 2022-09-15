@@ -58,4 +58,16 @@ lista.extend(lista2) #Adiciona a lista2 no final da lista
 print('Depois do extend: ',lista)                        # Resultado: [20, 1, 3, 12, 8, 2, 7, 10, 11, 12]
 
 
+# Agora iremos remover elementos de uma lista
+# Para remover um elemento de uma lista, podemos utilizar o método ".pop()"
+# O método ".pop()" remove o último elemento da lista e retorna o elemento removido
+# O método ".pop()" também pode receber um parâmetro, que é a posição do elemento que queremos remover
+lista.pop() #Remove o último elemento da lista
+print('Depois do pop:    ',lista)                        # Resultado: [20, 1, 3, 12, 8, 2, 7, 10, 11]
+lista.pop(0) #Remove o elemento da posição 0 da lista
+print('Depois do pop2:   ',lista)                        # Resultado: [1, 3, 12, 8, 2, 7, 10, 11]
 
+
+# O método ".remove()" remove o elemento que for passado como parâmetro
+lista.remove(7) #Remove o elemento 7 da lista
+print('Depois do remove: ',lista)                        # Resultado: [1, 3, 12, 8, 2, 10, 11]
