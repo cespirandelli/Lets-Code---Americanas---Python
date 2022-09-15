@@ -55,3 +55,39 @@ def saudacao(nome, curso='Python'): # definimos que Python será escolhido por p
 saudacao('César')               # Não é necessário colocar outra entrada, caso queira a resposta padrão.
 saudacao('Beatriz', 'SQL')      # Neste caso, como foi utilizado a segunda entrada, altera-se dentro da função.
 saudacao('Judite', 'PowerBI')   
+
+# Funções com retorno
+'''
+    Geralmente não é comum uma função imprimir algo na tela, mas sim retornar um valor.
+    Desta forma podemos utilizar o retorno da função para fazer outras coisas.
+
+'''
+def soma(num1=0, num2=0):
+    return num1 + num2      # Depois de utilizar o return, a função é encerrada.
+                            # Não é possível utilizar o print() ou qualquer outra ação após o return.
+                            
+resultado = soma(5, 7) #podemos atribuir o retorno da função a uma variável
+
+print(f'O resultado da soma é {resultado}.') # e/ou podemos imprimir o retorno da função num segundo momento
+
+'''
+    Agora vamos realizar uma função juntando tudo que já vimos anteriormente.
+'''
+
+def calculadora(num1=0, num2=0, operacao='+'):
+    if operacao == '+':
+        return num1 + num2
+    elif operacao == '*':
+        return num1 * num2
+    elif operacao == '/':
+        return num1 / num2
+    elif operacao == '-':
+        return num1 - num2
+    elif operacao == '//':
+        return num1 // num2
+    elif operacao == '**' or '^':
+        return num1 ** num2
+
+resultado1 = calculadora(10,20,'-')
+resultado2 = calculadora(10,20,'//') 
+print(resultado1, resultado2)
