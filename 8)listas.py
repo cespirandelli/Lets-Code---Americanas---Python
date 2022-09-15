@@ -22,5 +22,33 @@
     Como acessar os últimos itens de uma lista?      Usando o índice -1 e -2 e assim por diante
 '''
 
-# Criando uma lista
-lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# Antes desta aula, vimos que podemos armazenar apenas um valor em uma variável
+# Por exemplo, podemos armazenar o nome de uma pessoa em uma variável
+nome = 'João'
+
+# Mas e se quisermos armazenar mais de um valor? 
+# Por exemplo, o nome e a idade de uma pessoa?
+# Para isso, podemos utilizar uma lista
+# Uma lista é um conjunto de valores, que podem ser de qualquer tipo
+lista = ['João', 26, 1.75] # Nome do tipo string, idade do tipo inteiro e altura do tipo float
+print(lista, type(lista)) # Resultado: ['João', 26, 1.75] <class 'list'>
+
+'''
+    Em exemplo de outras aulas, vimos que se quisermos armazenar três notas, temos que criar três variáveis.
+    Porém, se quisermos armazenar 100 notas, teremos que criar 100 variáveis. Tornando o código muito verboso.
+    Para facilitar esta operação podemos utilizar listas. 
+
+'''
+
+# Antes
+nota1 = 10
+nota2 = 8
+nota3 = 9
+
+# Com lista
+notas = [10, 8, 9]
+
+# Podemos também criar uma lista vazia
+lista_vazia = []
+# Outra forma de criar uma lista vazia
+lista_vazia = list()
