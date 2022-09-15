@@ -54,3 +54,4 @@ while contador <5:
     print(contador)
     contador = contador+1
 print('Contador é igual a 5!')
+
